@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 7210476676718737251}
   - component: {fileID: 2172780294018542970}
   - component: {fileID: 4400525615441986133}
-  - component: {fileID: 1142511963230822847}
+  - component: {fileID: 8521530077479503065}
   - component: {fileID: 1184650545323475452}
   m_Layer: 6
-  m_Name: Racer
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7030307654993316743}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 39698d7ba85789b458aab698933086ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100,7 +100,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &1142511963230822847
+--- !u!54 &8521530077479503065
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,7 +114,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &1184650545323475452
 MonoBehaviour:
@@ -128,5 +128,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f42c63a482a85a44bb7710f13063a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1142511963230822847}
   keyToBePressed: 97
+  tfPlayer: {fileID: 3608424034380297705}
+  meshRenderer: {fileID: 2172780294018542970}
+  firstPlaceColor: {fileID: 2100000, guid: 9c3bed151b826aa4f9b621fb78cf6194, type: 2}
+  wrongWayColor: {fileID: 2100000, guid: f8ee8d13b6912484cba029c4f6451d43, type: 2}
+  normalColor: {fileID: 2100000, guid: 39698d7ba85789b458aab698933086ec, type: 2}
+  IsDrivingWrongWay: 0
